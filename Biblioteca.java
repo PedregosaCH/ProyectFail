@@ -1,17 +1,14 @@
+import java.util.List;
 
-package biblioteca;
-
-import java.util.List; 
-
-public class Usuario {
+public class Biblioteca {
 
   
     private String id;
     private String nombre;
     private int maximoPrestamosSimultaneos;
-    private List<Prestamo> prestamosActivos;
+    private List<biblioteca.Prestamo> prestamosActivos;
 
-    public Usuario(String id, String nombre) {
+    public void Usuario(String id, String nombre) {
         this.id = id;
         this.nombre = nombre;
         this.maximoPrestamosSimultaneos = 3;
@@ -37,10 +34,9 @@ public class Usuario {
 
     }
 
-    public List<Prestamo> getPrestamosActivos() {
+    public List<biblioteca.Prestamo> getPrestamosActivos() {
         return prestamos; // <- nombre de campo incorrecto
     }
-
     
     public boolean tieneHuecoParaOtroPrestamo() {
         int contador = 0;
