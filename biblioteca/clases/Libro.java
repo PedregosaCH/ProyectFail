@@ -21,6 +21,7 @@ public class Libro {
         this.ejemplaresDisponibles = ejemplaresTotales;
     }
 
+
     public String getIsbn() {
         return isbn;
     }
