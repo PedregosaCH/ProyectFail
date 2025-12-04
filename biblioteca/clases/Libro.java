@@ -1,5 +1,6 @@
 // Archivo: src/biblioteca/Libro.java
-package biblioteca;
+package biblioteca.clases;
+import java.time.LocalDate;
 
 public class Libro {
 
@@ -7,11 +8,11 @@ public class Libro {
     private String isbn;
     private String titulo;
     private String autor;
-    private int anioPublicacion;
+    private LocalDate anioPublicacion;
     private int ejemplaresTotales;
     private int ejemplaresDisponibles;
 
-    public Libro(String isbn, String titulo, String autor, int anioPublicacion, int ejemplaresTotales) {
+    public Libro(String isbn, String titulo, String autor, LocalDate anioPublicacion, int ejemplaresTotales) {
         this.isbn = isbn;
         this.titulo = titulo;
         this.autor = autor;
@@ -44,11 +45,11 @@ public class Libro {
         this.autor = autor;
     }
 
-    public int getAnioPublicacion() {
+    public LocalDate getAnioPublicacion() {
         return anioPublicacion;
     }
 
-    public void setAnioPublicacion(int anioPublicacion) {
+    public void setAnioPublicacion(LocalDate anioPublicacion) {
         this.anioPublicacion = anioPublicacion;
     }
 

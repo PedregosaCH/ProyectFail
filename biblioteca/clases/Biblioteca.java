@@ -1,3 +1,6 @@
+package biblioteca.clases;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class Biblioteca {
@@ -6,7 +9,7 @@ public class Biblioteca {
     private String id;
     private String nombre;
     private int maximoPrestamosSimultaneos;
-    private List<biblioteca.Prestamo> prestamosActivos;
+    private ArrayList<Prestar> prestamosActivos;
 
     public void Usuario(String id, String nombre) {
         this.id = id;
@@ -34,8 +37,8 @@ public class Biblioteca {
 
     }
 
-    public List<biblioteca.Prestamo> getPrestamosActivos() {
-        return prestamos; // <- nombre de campo incorrecto
+    public List<Prestar> getPrestamosActivos() {
+        return prestamosActivos; // <- nombre de campo incorrecto
     }
     
     public boolean tieneHuecoParaOtroPrestamo() {

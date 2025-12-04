@@ -1,11 +1,15 @@
+package biblioteca;
+
+import biblioteca.clases.BibliotecaService;
+
 import java.util.Scanner;
 
 public class Main {
 
-    private final biblioteca.BibliotecaService servicio;
+    private static final BibliotecaService servicio;
 
     public Main() {
-        servicio = new biblioteca.BibliotecaService();
+        servicio = new BibliotecaService();
     }
 
     public static void main(String[] argumentos) {
@@ -36,7 +40,7 @@ public class Main {
             }
         }
 
-        scanner.close()
+        scanner.close();
     }
 
     private void imprimirMenu() {
